@@ -18,8 +18,3 @@ try {
 }
 
 
-// module wrapper
-/* (function(exports, require, module, __filename, __dirname) {
-   your code;
-});
- */
