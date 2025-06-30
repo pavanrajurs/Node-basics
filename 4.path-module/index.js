@@ -10,8 +10,10 @@ const jointPath = path.join("/user", "documents", "node", "projects");
 console.log("Join Path:", jointPath);
 
 const resolvePath = path.resolve("user", "documents", "node", "projects");
-console.log("resolved path:",resolvePath);
+console.log("resolved path:", resolvePath);
+//path.resolve()=> It builds absolute paths (starting from your system root).
 
-
-const noramalizePath = path.normalize('/user/.document/.objects/.math/../node/projects');
-console.log("NoramalizePath:",noramalizePath);
+const noramalizePath = path.normalize(
+  "/user/.document/.objects/.math/../node/projects"
+);
+console.log("NoramalizePath:", noramalizePath);
