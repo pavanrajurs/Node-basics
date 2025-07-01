@@ -4,7 +4,7 @@ const server = http.createServer((req, res) => {
   const url = req.url;
   if (url === "/") {
     res.writeHead(200, { "content-type": "text/plain" });
-    res.end("HOME PAGE");
+    res.end("HOME PAGE 1");
   } else if (url === "/projects") {
     res.writeHead(200, { "content-type": "text/plain" });
     res.end("PROJECTS PAGE");
@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
   }
 });
 
-const port = 3000;
+const port = 4000;
 
 server.listen(port, () => {
   console.log(`Server running at ${port}`);
